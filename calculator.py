@@ -17,12 +17,12 @@ def mul(a, b):
 def div(a, b):
     try: b / a
     except ZeroDivisionError:
-        print("error")
+        print("Error")
 
 def log(a, b):
     try: math.log(a, b)
     except ValueError:
-        print("error")
+        print("Error")
 
 def exp(a, b):
     return a ** b
