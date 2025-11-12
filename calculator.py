@@ -8,7 +8,6 @@ calculator.py
 
 One function per operation, in order.
 """
-
 import math
 def square_root(a):
     if a < 0:
@@ -29,7 +28,7 @@ def mul(a, b):
 
 def div(a, b):
     if b == 0:
-        raise ValueError("Division by zero is not allowed")
+        raise ZeroDivisionError("Division by zero is not allowed")
     return a/b
 
 def logarithm(a, b):
