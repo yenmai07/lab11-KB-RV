@@ -4,7 +4,9 @@ calculator.py
 
 One function per operation, in order.
 """
+
 import math
+
 def add(a, b):
     return a + b
 
@@ -15,14 +17,16 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    try: b / a
-    except ZeroDivisionError:
-        print("Error")
+    if b == 0:
+        raise ValueError("Division by zero is not allowed")
+    return a / b
 
 def log(a, b):
-    try: math.log(a, b)
-    except ValueError:
-        print("Error")
+    if a <= 0 or a == 1:
+        raise ValueError("Base must be positive and not equal to 1")
+    if b <= 0:
+        raise ValueError("Argument must be positive")
+    return math.log(b, a)
 
 def exp(a, b):
     return a ** b
