@@ -14,9 +14,9 @@ class TestCalculator(unittest.TestCase):
         self.add(18, 22)
 
     def test_subtract(self): # 3 assertions
-        self.sub(10, 6)
-        self.sub(54, 3)
-        self.sub(99, 4)
+        self.subtract(10, 6)
+        self.subtract(54, 3)
+        self.subtract(99, 4)
 
     #Partner 1
     def test_multiply(self): # 3 assertions
@@ -35,9 +35,9 @@ class TestCalculator(unittest.TestCase):
             div(0, 3)
 
     def test_logarithm(self): # 3 assertions
-        self.log(10, 87)
-        self.log(8, 12)
-        self.log(27, 10)
+        self.logarithm(10, 87)
+        self.logarithm(8, 12)
+        self.logarithm(27, 10)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
