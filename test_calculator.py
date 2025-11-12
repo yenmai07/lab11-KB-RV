@@ -9,14 +9,14 @@ from calculator import *
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
     def test_add(self): # 3 assertions
-        self.add(5, 3)
-        self.add(2, 2)
-        self.add(18, 22)
+        self.assertEqual(add(5, 3))
+        self.assertEqual(add(2, 2))
+        self.assertEqual(add(18, 22))
 
     def test_subtract(self): # 3 assertions
-        self.subtract(10, 6)
-        self.subtract(54, 3)
-        self.subtract(99, 4)
+        self.assertEqual(subtract(10, 6))
+        self.assertEqual(subtract(54, 3))
+        self.assertEqual(subtract(99, 4))
 
     #Partner 1
     def test_multiply(self): # 3 assertions
@@ -41,7 +41,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            logarithm(10, 3)
+            logarithm(0, 10)
 
     ######## Partner 1
     # def test_log_invalid_argument(self): # 1 assertion
