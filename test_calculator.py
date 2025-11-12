@@ -37,14 +37,12 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             log(10, 3)
 
-<<<<<<< HEAD
     ######## Partner 1
     # def test_log_invalid_argument(self): # 1 assertion
     #     # call log function inside, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #     logarithm(0, 5)
     #     fill in code
-=======
     # def test_log_invalid_base(self): # 1 assertion
     #     # use same technique from test_divide_by_zero
     #     fill in code
@@ -54,7 +52,6 @@ class TestCalculator(unittest.TestCase):
     def test_log_invalid_argument(self): # 1 assertion
         with self.assertRaises(ValueError):
             log(0, 10)
->>>>>>> 0dd166955bd65c5fa197a823149eb9623db29bc9
 
     def test_hypotenuse(self): # 3 assertions
         self.assertEqual(hypotenuse(3, 4), 5)
