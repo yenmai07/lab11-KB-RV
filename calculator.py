@@ -1,3 +1,7 @@
+#https://github.com/yenmai07/lab11-KB-RV.git
+#Partner 1: Kayla Bui
+#Partner 2: Rosetta Vang
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
