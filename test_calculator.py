@@ -1,4 +1,9 @@
-    import unittest
+#https://github.com/yenmai07/lab11-KB-RV.git
+#Partner 1: Kayla Bui
+#Partner 2: Rosetta Vang
+
+
+import unittest
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
