@@ -11,6 +11,7 @@ class TestCalculator(unittest.TestCase):
     def test_subtract(self): # 3 assertions
         self.sub(10, 6)
         self.sub(54, 3)
+        self.sub(99, 4)
 
     #Partner 1
     def test_multiply(self): # 3 assertions
