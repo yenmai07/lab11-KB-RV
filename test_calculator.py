@@ -9,14 +9,14 @@ from calculator import *
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
     def test_add(self): # 3 assertions
-        self.assertEqual(add(5, 3))
-        self.assertEqual(add(2, 2))
-        self.assertEqual(add(18, 22))
+        self.assertEqual(add(5, 3), 8)
+        self.assertEqual(add(2, 2), 4)
+        self.assertEqual(add(18, 22), 40)
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(subtract(10, 6))
-        self.assertEqual(subtract(54, 3))
-        self.assertEqual(subtract(99, 4))
+        self.assertEqual(subtract(10, 6), 4)
+        self.assertEqual(subtract(54, 3), 51)
+        self.assertEqual(subtract(99, 4), 95)
 
     #Partner 1
     def test_multiply(self): # 3 assertions
